@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   get "/spaceshuttles", to: "space_shuttles#index"
+  get "spaceshuttles/:id", to: "space_shuttles#show"
 end
