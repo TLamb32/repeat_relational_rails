@@ -1,0 +1,3 @@
+class SpaceShuttlesController < ApplicationController
+  
+end
