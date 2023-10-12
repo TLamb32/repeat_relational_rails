@@ -22,7 +22,7 @@ RSpec.describe "Astronauts Index" do
       expect(page).to have_content("Name: #{@astronaut2.name}")
       expect(page).to have_content("Age: #{@astronaut2.age}")
       expect(page).to have_content("Is a specialist? #{@astronaut2.specialist}")
-      save_and_open_page
+      # save_and_open_page
     end
   end
 end
