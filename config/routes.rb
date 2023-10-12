@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get "/spaceshuttles/:id", to: "space_shuttles#show"
 
   get "/astronauts", to: "astronauts#index"
+  get "/astronauts/:id", to: "astronauts#show"
 end
