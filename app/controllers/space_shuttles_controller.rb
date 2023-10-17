@@ -6,5 +6,6 @@ class SpaceShuttlesController < ApplicationController
 
   def show
     @spaceshuttle = SpaceShuttle.find(params[:id])
+    @astronaut = @spaceshuttle.astronaut_count
   end
 end

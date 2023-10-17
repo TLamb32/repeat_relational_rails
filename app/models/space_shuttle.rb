@@ -8,4 +8,8 @@ class SpaceShuttle < ApplicationRecord
   def self.sort_by_recently_created
     SpaceShuttle.order(created_at: :desc)
   end
+
+  def astronaut_count
+    astronauts.count
+  end
 end
