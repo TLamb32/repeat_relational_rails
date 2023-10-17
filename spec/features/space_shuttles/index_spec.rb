@@ -24,4 +24,25 @@ RSpec.describe "Space Shuttles Index" do
       # save_and_open_page
     end
   end
+
+  describe "When I visit '/spaceshuttles'" do
+    it "displays the record in order by most recently created first" do
+
+      visit "/spaceshuttles"
+
+      expect(page).to have_content(@spaceshuttle_1.mission_name)
+      expect(page).to have_content(@spaceshuttle_1.created_at)
+      expect(page).to have_content(@spaceshuttle_2.mission_name)
+      expect(page).to have_content(@spaceshuttle_2.created_at)
+      save_and_open_page
+      expect(@spaceshuttle_2.mission_name).to appear_before(@spaceshuttle_1.mission_name)
+    end
+
+    it "displays next to each of the records I see when it was created" do
+
+      visit "/spaceshuttles"
+
+      
+    end
+  end
 end

@@ -1,7 +1,7 @@
 class SpaceShuttlesController < ApplicationController
   
   def index
-    @spaceshuttles = SpaceShuttle.all
+    @spaceshuttles = SpaceShuttle.all.sort_by_recently_created
   end
 
   def show
