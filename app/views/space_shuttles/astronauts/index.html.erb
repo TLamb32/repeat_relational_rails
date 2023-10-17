@@ -1,0 +1,7 @@
+<h2><%= @spaceshuttle.mission_name %></h2>
+<% @astronauts.each do |astronaut| %>
+  <p>Astronaut Name: <%= astronaut.name %></p>
+  <p>Astronaut Age: <%= astronaut.age %></p>
+  <p>Is a specialist?: <%= astronaut.specialist %></p>
+<% end %>
+  
